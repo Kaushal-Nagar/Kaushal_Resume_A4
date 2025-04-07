@@ -1,0 +1,95 @@
+document.addEventListener("DOMContentLoaded", function () {
+  // Load the JSON data
+  fetch("resumeData.json")
+    .then((response) => response.json())
+    .then((data) => {
+      // Populate the name
+
+      const nameContainer = document.getElementById("name-container");
+      nameContainer.innerHTML = `<span class="name">${data.name}</span> ( ${data["Job Role"]} )`;
+
+      // Populate contact info
+      const contactInfo = document.getElementById("contact-info");
+      data.contactInfo.forEach((item) => {
+        const li = document.createElement("li");
+        if (typeof item === "string") {
+          li.textContent = item;
+        } else if (item.email) {
+          li.innerHTML = `✉️ <a href="${item.url}" target="_blank">${item.email}</a>`;
+        } else if (item.linkedin) {
+          li.innerHTML = `🔗 <a href="${item.url}" target="_blank">${item.linkedin}</a>`;
+        }
+        contactInfo.appendChild(li);
+      });
+
+      // Populate about section
+      document.getElementById("about").textContent = data.about;
+
+      // Populate skills
+      const skillsList = document.getElementById("skills");
+      for (const [key, value] of Object.entries(data.skills)) {
+        const li = document.createElement("li");
+        li.innerHTML = `<strong>${key} :</strong> ${value}`;
+        skillsList.appendChild(li);
+      }
+
+      // Populate experience
+      const experienceList = document.getElementById("experience");
+      data.experience.forEach((exp) => {
+        const li = document.createElement("li");
+        li.className = "experience-item";
+        li.innerHTML = `<h3>${exp.position} | ${exp.company} (${exp.duration})</h3>`;
+
+        const ul = document.createElement("ul");
+        exp.responsibilities.forEach((resp) => {
+          const respLi = document.createElement("li");
+          if (resp.project) {
+            respLi.innerHTML = `<strong>${resp.project}</strong>`;
+            const projectUl = document.createElement("ul");
+            resp.details.forEach((detail) => {
+              const detailLi = document.createElement("li");
+              if (detail.title) {
+                detailLi.innerHTML = `<strong>${detail.title}</strong> ${detail.description}`;
+              } else {
+                detailLi.textContent = detail.description;
+              }
+              projectUl.appendChild(detailLi);
+            });
+            respLi.appendChild(projectUl);
+          } else if (resp.title) {
+            respLi.innerHTML = `<strong>${resp.title}</strong> ${resp.description}`;
+          } else {
+            respLi.textContent = resp.description;
+          }
+          ul.appendChild(respLi);
+        });
+        li.appendChild(ul);
+        experienceList.appendChild(li);
+      });
+
+      // Populate projects
+      const projectsList = document.getElementById("projects");
+      data.projects.forEach((project) => {
+        const li = document.createElement("li");
+        li.innerHTML = `<strong>${project.name}:</strong> ${project.description}`;
+        projectsList.appendChild(li);
+      });
+
+      // Populate certifications
+      const certList = document.getElementById("certifications");
+      data.certifications.forEach((cert) => {
+        const li = document.createElement("li");
+        li.innerHTML = `<strong>${cert.name}</strong> | ${cert.issuer} (${cert.year})`;
+        certList.appendChild(li);
+      });
+
+      // Populate education
+      const eduList = document.getElementById("education");
+      data.education.forEach((edu) => {
+        const li = document.createElement("li");
+        li.innerHTML = `<strong>${edu.degree} | ${edu.institution}</strong> | ${edu.year} | ${edu.grade}`;
+        eduList.appendChild(li);
+      });
+    })
+    .catch((error) => console.error("Error loading resume data:", error));
+});

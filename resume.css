@@ -1,0 +1,141 @@
+/* Global Variables */
+:root {
+  --font-family: Cambria, Tahoma, Geneva, Verdana, sans-serif;
+  --base-font-size: 10pt;
+  --line-height: 1.2;
+  --heading-font-size: 12pt;
+  --subheading-font-size: 10pt;
+  --spacing-small: 3px;
+  --spacing-medium: 5px;
+  --spacing-large: 5px;
+  --bullet-indent: 0px; /* Indentation for bullet points */
+}
+
+/* Page and Body Styles */
+@page {
+  size: A4;
+  margin: 0.5cm;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  font-size: var(--base-font-size);
+}
+
+/* Container */
+.resume-container {
+  max-width: 20cm; /* Adjusted to account for margins */
+  margin: 0 auto;
+  padding: 0.5cm; /* 0.25cm internal padding */
+  border: 1px solid #000000; /* Subtle border */
+  box-shadow: none; /* Remove shadow for print */
+}
+
+/* Header Styles */
+header h1 {
+  font-size: 14pt;
+  margin: 0 0 var(--spacing-small) 0;
+  color: #222;
+  border-bottom: 1px solid #333;
+  padding-bottom: calc(var(--spacing-small) / 0.5);
+  font-weight: normal; /* Base weight for the entire line */
+}
+
+header h1 .name {
+  font-weight: bold; /* Bold only for the name */
+  font-size: 16pt;
+}
+
+/* Headings */
+h2 {
+  font-size: var(--heading-font-size);
+  color: #222;
+  margin: 0 0 var(--spacing-small);
+  border-bottom: 1px solid #555;
+}
+
+/* Contact Information */
+.contact-info {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 var(--spacing-medium) 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: calc(var(--spacing-small) + 5px) calc(var(--spacing-small) + 12px);
+}
+
+/* About Section */
+.about-section p {
+  font-size: var(--base-font-size);
+  margin: var(--spacing-small) 0;
+  text-align: justify;
+}
+
+/* List Styles - Global Bullet Point Indentation */
+ul {
+  padding-left: 30px; /* Consistent padding */
+  margin: var(--spacing-small) 0;
+}
+
+li {
+  margin-bottom: var(--spacing-small);
+  font-size: calc(var(--base-font-size) - 0.5pt);
+  position: relative;
+  padding-left: var(--spacing-small);
+}
+
+/* Bullet point indentation */
+li::marker {
+  margin-left: var(--bullet-indent);
+}
+
+/* Experience Section */
+.experience-item {
+  margin-bottom: var(--spacing-large);
+}
+
+.experience-item h3 {
+  font-size: var(--subheading-font-size);
+  margin: 0 0 var(--spacing-small) 0;
+  font-weight: bold;
+}
+
+/* Nested Lists */
+.experience-item ul ul {
+  margin-bottom: var(--spacing-small);
+}
+
+.experience-item ul ul li {
+  margin-bottom: var(--spacing-small);
+}
+
+/* Projects, Education, and Certification Sections */
+.project-item ul,
+.education-item ul,
+.certifications-section ul {
+  padding-left: 30px; /* Indented bullets */
+}
+
+.project-item li,
+.education-item li,
+.certifications-section li {
+  margin-left: var(--bullet-indent); /* Bullet point moved to the left */
+}
+
+/* Print-specific adjustments */
+@media print {
+  /* body {
+    background: rgb(255, 255, 255);
+    color: black;
+    font-size: 10pt;
+  } */
+
+  .resume-container {
+    border: none; /* Remove border for print if preferred */
+  }
+}
