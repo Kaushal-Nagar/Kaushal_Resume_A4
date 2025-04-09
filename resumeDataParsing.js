@@ -1,95 +1,173 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Load the JSON data
-  fetch("resumeData.json")
-    .then((response) => response.json())
-    .then((data) => {
-      // Populate the name
+  // Define your resume versions
+  const resumeVersions = [
+    {
+      id: "Common",
+      name: "Common Resume",
+      file: "/resumeVersions/Common.json",
+    },
+    {
+      id: "react-native",
+      name: "React Native Resume",
+      file: "/resumeVersions/ReactNative.json",
+    },
+    // { id: "full-stack", name: "Full Stack Developer", file: "fullStack.json" },
+  ];
+  // Create version cards
+  const versionSelector = document.getElementById("version-selector");
 
-      const nameContainer = document.getElementById("name-container");
-      nameContainer.innerHTML = `<span class="name">${data.name}</span> ( ${data["Job Role"]} )`;
+  resumeVersions.forEach((version, index) => {
+    // Create version card
+    const card = document.createElement("div");
+    card.className = "version-card" + (index === 0 ? " active" : "");
+    card.dataset.versionId = version.id;
 
-      // Populate contact info
-      const contactInfo = document.getElementById("contact-info");
-      data.contactInfo.forEach((item) => {
-        const li = document.createElement("li");
-        if (typeof item === "string") {
-          li.textContent = item;
-        } else if (item.email) {
-          li.innerHTML = `✉️ <a href="${item.url}" target="_blank">${item.email}</a>`;
-        } else if (item.linkedin) {
-          li.innerHTML = `🔗 <a href="${item.url}" target="_blank">${item.linkedin}</a>`;
-        }
-        contactInfo.appendChild(li);
-      });
+    // Add version name
+    const nameElement = document.createElement("div");
+    nameElement.className = "version-name";
+    nameElement.textContent = version.name;
+    card.appendChild(nameElement);
 
-      // Populate about section
-      document.getElementById("about").textContent = data.about;
+    // Add download button
+    const downloadBtn = document.createElement("button");
+    downloadBtn.className = "download-btn";
+    downloadBtn.textContent = "Download PDF";
+    downloadBtn.addEventListener("click", function (e) {
+      e.stopPropagation(); // Prevent triggering the card click
+      window.print();
+    });
+    card.appendChild(downloadBtn);
 
-      // Populate skills
-      const skillsList = document.getElementById("skills");
-      for (const [key, value] of Object.entries(data.skills)) {
-        const li = document.createElement("li");
-        li.innerHTML = `<strong>${key} :</strong> ${value}`;
-        skillsList.appendChild(li);
+    // Add click handler to switch versions
+    card.addEventListener("click", () => switchResumeVersion(version.id));
+
+    versionSelector.appendChild(card);
+  });
+
+  // Load the first resume by default
+  loadResumeData(resumeVersions[0].file);
+
+  // Function to switch between resume versions
+  function switchResumeVersion(versionId) {
+    // Update active card
+    document.querySelectorAll(".version-card").forEach((card) => {
+      card.classList.toggle("active", card.dataset.versionId === versionId);
+    });
+
+    // Load the corresponding resume data
+    const version = resumeVersions.find((v) => v.id === versionId);
+    loadResumeData(version.file);
+  }
+
+  // Function to load resume data
+  function loadResumeData(filename) {
+    fetch(filename)
+      .then((response) => response.json())
+      .then((data) => populateResume(data))
+      .catch((error) => console.error("Error loading resume data:", error));
+  }
+
+  // Function to download/print resume
+  function downloadResume() {
+    window.print();
+  }
+
+  // Function to populate resume (same as your existing code, just extracted)
+  function populateResume(data) {
+    // Clear existing content
+    document.getElementById("name-container").innerHTML = "";
+    document.getElementById("contact-info").innerHTML = "";
+    document.getElementById("skills").innerHTML = "";
+    document.getElementById("experience").innerHTML = "";
+    document.getElementById("projects").innerHTML = "";
+    document.getElementById("certifications").innerHTML = "";
+    document.getElementById("education").innerHTML = "";
+
+    // Populate the name
+    const nameContainer = document.getElementById("name-container");
+    nameContainer.innerHTML = `<span class="name">${data.name}</span> ( ${data["Job Role"]} )`;
+
+    // Populate contact info
+    const contactInfo = document.getElementById("contact-info");
+    data.contactInfo.forEach((item) => {
+      const li = document.createElement("li");
+      if (typeof item === "string") {
+        li.textContent = item;
+      } else if (item.email) {
+        li.innerHTML = `✉️ <a href="${item.url}" target="_blank">${item.email}</a>`;
+      } else if (item.linkedin) {
+        li.innerHTML = `🔗 <a href="${item.url}" target="_blank">${item.linkedin}</a>`;
       }
+      contactInfo.appendChild(li);
+    });
 
-      // Populate experience
-      const experienceList = document.getElementById("experience");
-      data.experience.forEach((exp) => {
-        const li = document.createElement("li");
-        li.className = "experience-item";
-        li.innerHTML = `<h3>${exp.position} | ${exp.company} (${exp.duration})</h3>`;
+    // Populate about section
+    document.getElementById("about").textContent = data.about;
 
-        const ul = document.createElement("ul");
-        exp.responsibilities.forEach((resp) => {
-          const respLi = document.createElement("li");
-          if (resp.project) {
-            respLi.innerHTML = `<strong>${resp.project}</strong>`;
-            const projectUl = document.createElement("ul");
-            resp.details.forEach((detail) => {
-              const detailLi = document.createElement("li");
-              if (detail.title) {
-                detailLi.innerHTML = `<strong>${detail.title}</strong> ${detail.description}`;
-              } else {
-                detailLi.textContent = detail.description;
-              }
-              projectUl.appendChild(detailLi);
-            });
-            respLi.appendChild(projectUl);
-          } else if (resp.title) {
-            respLi.innerHTML = `<strong>${resp.title}</strong> ${resp.description}`;
-          } else {
-            respLi.textContent = resp.description;
-          }
-          ul.appendChild(respLi);
-        });
-        li.appendChild(ul);
-        experienceList.appendChild(li);
+    // Populate skills
+    const skillsList = document.getElementById("skills");
+    for (const [key, value] of Object.entries(data.skills)) {
+      const li = document.createElement("li");
+      li.innerHTML = `<strong>${key} :</strong> ${value}`;
+      skillsList.appendChild(li);
+    }
+
+    // Populate experience
+    const experienceList = document.getElementById("experience");
+    data.experience.forEach((exp) => {
+      const li = document.createElement("li");
+      li.className = "experience-item";
+      li.innerHTML = `<h3>${exp.position} | ${exp.company} (${exp.duration})</h3>`;
+
+      const ul = document.createElement("ul");
+      exp.responsibilities.forEach((resp) => {
+        const respLi = document.createElement("li");
+        if (resp.project) {
+          respLi.innerHTML = `<strong>${resp.project}</strong>`;
+          const projectUl = document.createElement("ul");
+          resp.details.forEach((detail) => {
+            const detailLi = document.createElement("li");
+            if (detail.title) {
+              detailLi.innerHTML = `<strong>${detail.title}</strong> ${detail.description}`;
+            } else {
+              detailLi.textContent = detail.description;
+            }
+            projectUl.appendChild(detailLi);
+          });
+          respLi.appendChild(projectUl);
+        } else if (resp.title) {
+          respLi.innerHTML = `<strong>${resp.title}</strong> ${resp.description}`;
+        } else {
+          respLi.textContent = resp.description;
+        }
+        ul.appendChild(respLi);
       });
+      li.appendChild(ul);
+      experienceList.appendChild(li);
+    });
 
-      // Populate projects
-      const projectsList = document.getElementById("projects");
-      data.projects.forEach((project) => {
-        const li = document.createElement("li");
-        li.innerHTML = `<strong>${project.name}:</strong> ${project.description}`;
-        projectsList.appendChild(li);
-      });
+    // Populate projects
+    const projectsList = document.getElementById("projects");
+    data.projects.forEach((project) => {
+      const li = document.createElement("li");
+      li.innerHTML = `<strong>${project.name}:</strong> ${project.description}`;
+      projectsList.appendChild(li);
+    });
 
-      // Populate certifications
-      const certList = document.getElementById("certifications");
-      data.certifications.forEach((cert) => {
-        const li = document.createElement("li");
-        li.innerHTML = `<strong>${cert.name}</strong> | ${cert.issuer} (${cert.year})`;
-        certList.appendChild(li);
-      });
+    // Populate certifications
+    const certList = document.getElementById("certifications");
+    data.certifications.forEach((cert) => {
+      const li = document.createElement("li");
+      li.innerHTML = `<strong>${cert.name}</strong> | ${cert.issuer} (${cert.year})`;
+      certList.appendChild(li);
+    });
 
-      // Populate education
-      const eduList = document.getElementById("education");
-      data.education.forEach((edu) => {
-        const li = document.createElement("li");
-        li.innerHTML = `<strong>${edu.degree} | ${edu.institution}</strong> | ${edu.year} | ${edu.grade}`;
-        eduList.appendChild(li);
-      });
-    })
-    .catch((error) => console.error("Error loading resume data:", error));
+    // Populate education
+    const eduList = document.getElementById("education");
+    data.education.forEach((edu) => {
+      const li = document.createElement("li");
+      li.innerHTML = `<strong>${edu.degree} | ${edu.institution}</strong> | ${edu.year} | ${edu.grade}`;
+      eduList.appendChild(li);
+    });
+  }
 });

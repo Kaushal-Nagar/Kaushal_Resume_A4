@@ -1,0 +1,196 @@
+{
+  "name": "Kaushal H. Nagar",
+  "Job Role": "iOS and React Native Developer ula",
+  "contactInfo": [
+    "📞 6352599059",
+    {
+      "email": "kaushalnagar997@gmail.com",
+      "url": "mailto:kaushalnagar997@gmail.com"
+    },
+    {
+      "linkedin": "linkedin.com/in/kaushal-nagar997",
+      "url": "https://linkedin.com/in/kaushal-nagar997"
+    }
+  ],
+  "about": "Results-driven iOS Developer with hands-on experience in building robust, scalable, and high-performance applications. Proficient in Swift, UIKit, and MapKit, with expertise in real-time communication using Core Location. Skilled in optimizing memory management and enhancing app performance through efficient coding practices. Experienced in implementing XCTest for thorough testing and maintaining code quality. Developed cross-platform solutions with React Native (Axios, Context API, Functional Components). Led technical initiatives as Google Developer Student Club Lead, organizing events for 700+ attendees. Passionate about clean architecture, efficient coding practices, and emerging technologies.",
+  "skills": {
+    "Programming Languages": "C, Python, Swift, React Native, SwiftUI basics, HTML5, CSS3, JavaScript, TypeScript",
+    "iOS Frameworks": "UIKit, Core Animation, Core Location, AVFoundation, MapKit, CocoaPods",
+    "Databases": "SQL, SQLite, Core Data",
+    "Software Architecture": "OOP, MVC, MVVM",
+    "Developer Tools": "Git, GitHub, GitLab, VS Code, Xcode, Pycharm, IntelliJ IDEA, Android Studio, Postman",
+    "Testing": "XCTest, Unit Testing, UI Testing, Debugging",
+    "Operating Systems": "Windows, MacOs, Linux",
+    "Designing Tools": "Figma, Adobe XD, Storyboards, Auto Layout, Photoshop, Lightroom, After Effects, Premiere Pro",
+    "Agile Methodologies": "Kanban, JIRA, Active Collab",
+    "Other Software": "OBS Studio",
+    "Soft Skills": "Team Leadership, Communication, Problem Solving, Analytical Skills, Time Management",
+    "Other Interests": "Ethical Hacking, Rubik's Cube Solver (2 Min)"
+  },
+  "experience": [
+    {
+      "position": "iOS ( Swift ) and React Native Developer",
+      "company": "Webcodegenie Pvt Ltd",
+      "duration": "April 2024 – Present",
+      "responsibilities": [
+        {
+          "project": "Mario Customer & Mario Driver Apps ( iOS Swift )",
+          "details": [
+            {
+              "title": "Socket Implementation:",
+              "description": "Enabled real-time communication by implementing sockets for improved data transfer across screens."
+            },
+            {
+              "title": "Real-Time Features:",
+              "description": "Developed live location tracking system with MapKit and Core Location, enabling real-time path drawing with 95% accuracy for enhanced user experience."
+            },
+            {
+              "title": "Bulk Image Upload:",
+              "description": "Developed an optimized feature for uploading and displaying up to 6GB of images using minimal memory (under 50MB)."
+            },
+            {
+              "title": "Enhanced UI/UX:",
+              "description": "Designed and implemented custom UI components with Core Animation, resulting in 30% improvement in app engagement metrics."
+            },
+            {
+              "title": "Unit Testing & Quality Assurance:",
+              "description": "Implemented Unit Testing using XCTest, ensuring reliable and bug-free code with major code coverage."
+            }
+          ]
+        },
+        {
+          "project": "Yallah Chiaka ( iOS Swift )",
+          "details": [
+            {
+              "description": "Played a key role in the end-to-end design and development of a clothing e-commerce app from the ground up."
+            },
+            {
+              "description": "Designed and developed 30+ dynamic screens in a 5-6 day timeframe for the initial demo."
+            }
+          ]
+        },
+        {
+          "project": "WCG Chat (React Native Chat App)",
+          "details": [
+            {
+              "title": "Built from Scratch with Modern Architecture:",
+              "description": "Developed a production-ready chat application using React Native (Functional Components with Hooks), implementing clean architecture with separation of concerns."
+            },
+            {
+              "title": "Advanced Socket Implementation:",
+              "description": "Engineered real-time messaging system using Socket.IO, implementing presence detection, typing indicators, and message delivery status with optimized reconnection strategies."
+            },
+            {
+              "title": "API Integration & State Management:",
+              "description": "Implemented RESTful API calls using Axios, coupled with Context API for efficient global state management across chat screens."
+            },
+            {
+              "title": "Performance Optimization:",
+              "description": "Achieving smooth scrolling through thousands of messages with FlatList optimization."
+            },
+            {
+              "title": "Modular Component Design:",
+              "description": "Created reusable UI components (MessageBubble, TypingIndicator, ChatHeader) with PropTypes validation, following Atomic Design principles for scalability."
+            }
+          ]
+        },
+        {
+          "project": "GoMow Customer (React Native App)",
+          "details": [
+            {
+              "title": "Legacy System Modernization:",
+              "description": "Transformed outdated codebase to modern React Native architecture, improving maintainability and reducing bug reports by 40%."
+            },
+            {
+              "title": "UI/UX Optimization:",
+              "description": "Redesigned core user flows with React Navigation, implementing smooth animations using Reanimated, resulting in improved user retention."
+            },
+            {
+              "title": "API Layer Refactor:",
+              "description": "Implemented Axios interceptors for centralized error handling, improving API success rate to 99.8%."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": "Technical Community Leader",
+      "company": "Google Developer Student Club & Ed-Tech Platforms",
+      "duration": "July 2022 – August 2023",
+      "responsibilities": [
+        {
+          "title": "Google Developer Student Club Lead:",
+          "description": "Founded and led Google developer community, organizing 25+ technical workshops on GCP, Kotlin, Flutter, and resume building. Organized GDSC WOW Gujarat 2023 (700+ attendees)."
+        },
+        {
+          "title": "Technical Community Head:",
+          "description": "Led and Managed developer communities for Algozenith, Coding Blocks, Coding Ninja, Skill-Lync, and TechLearn, fostering technical growth among members."
+        }
+      ]
+    },
+    {
+      "position": "Content & Operations Specialist",
+      "company": "FreeCo & Epitome Webcasting",
+      "duration": "Feb 2021 – Nov 2021",
+      "responsibilities": [
+        {
+          "title": "Content Development:",
+          "description": "Authored SEO-friendly articles and served as SME for mathematics, physics, and chemistry content."
+        },
+        {
+          "title": "Technical Operations:",
+          "description": "Performed data entry/verification and assisted webcasting operations (equipment setup, live monitoring, video editing/uploading)."
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Music Player (iOS App)",
+      "description": "Built a fully functional music player with audio playback and media controls using AVFoundation and AVPlayer."
+    },
+    {
+      "name": "Tic-Tac-Toe Game (iOS App)",
+      "description": "Developed a game with dynamic UI updates and game logic using Swift."
+    },
+    {
+      "name": "E-commerce App (iOS App)",
+      "description": "Designed and developed a full-fledged e-commerce platform with product listings."
+    },
+    {
+      "name": "Smart IoT Thing Detection Bag",
+      "description": "Smart bag using IoT sensors and machine learning to detect and identify objects inside. Provides information and alerts to the user's smartphone or smartwatch. Selected for funding by SSIP, a Government of Gujarat scheme, promoting student entrepreneurship and innovation."
+    },
+    {
+      "name": "Portfolio Website",
+      "description": "Personal portfolio website built with HTML, CSS, and JavaScript."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Google Developer Student Club Lead",
+      "issuer": "Google",
+      "year": "2023"
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.E. Computer Science",
+      "institution": "Government Engineering College, Patan (GTU)",
+      "year": "2020 - 2024",
+      "grade": "CGPA: 7.52"
+    },
+    {
+      "degree": "HSC",
+      "institution": "Nilkanth Vidhyalay, Limbdi (GSEB, Gandhinagar)",
+      "year": "2019 - 2020",
+      "grade": "Percentage: 57%"
+    },
+    {
+      "degree": "SSC",
+      "institution": "S.T. Thomash School, Limbdi (GSEB, Gandhinagar)",
+      "year": "2017 -  2018",
+      "grade": "Percentage: 73.33%"
+    }
+  ]
+}
