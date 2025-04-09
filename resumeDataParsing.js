@@ -11,10 +11,11 @@ document.addEventListener("DOMContentLoaded", function () {
       name: "React Native Resume",
       file: "/resumeVersions/ReactNative.json",
     },
-    // { id: "full-stack", name: "Full Stack Developer", file: "fullStack.json" },
   ];
+
   // Create version cards
   const versionSelector = document.getElementById("version-selector");
+  let currentVersionId = resumeVersions[0].id; // Track current version
 
   resumeVersions.forEach((version, index) => {
     // Create version card
@@ -32,14 +33,23 @@ document.addEventListener("DOMContentLoaded", function () {
     const downloadBtn = document.createElement("button");
     downloadBtn.className = "download-btn";
     downloadBtn.textContent = "Download PDF";
+    downloadBtn.dataset.versionId = version.id; // Associate button with version
     downloadBtn.addEventListener("click", function (e) {
-      e.stopPropagation(); // Prevent triggering the card click
-      window.print();
+      e.stopPropagation();
+      // Only print if this is the current version
+      if (version.id === currentVersionId) {
+        window.print();
+      } else {
+        // Switch to this version first, then print
+        switchResumeVersion(version.id, true);
+      }
     });
     card.appendChild(downloadBtn);
 
     // Add click handler to switch versions
-    card.addEventListener("click", () => switchResumeVersion(version.id));
+    card.addEventListener("click", function () {
+      switchResumeVersion(version.id);
+    });
 
     versionSelector.appendChild(card);
   });
@@ -47,8 +57,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // Load the first resume by default
   loadResumeData(resumeVersions[0].file);
 
-  // Function to switch between resume versions
-  function switchResumeVersion(versionId) {
+  // Modified switch function with optional print parameter
+  function switchResumeVersion(versionId, shouldPrint = false) {
+    currentVersionId = versionId; // Update current version
+
     // Update active card
     document.querySelectorAll(".version-card").forEach((card) => {
       card.classList.toggle("active", card.dataset.versionId === versionId);
@@ -56,12 +68,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Load the corresponding resume data
     const version = resumeVersions.find((v) => v.id === versionId);
-    loadResumeData(version.file);
+    loadResumeData(version.file).then(() => {
+      if (shouldPrint) {
+        window.print();
+      }
+    });
   }
 
-  // Function to load resume data
+  // Modified load function to return Promise
   function loadResumeData(filename) {
-    fetch(filename)
+    return fetch(filename)
       .then((response) => response.json())
       .then((data) => populateResume(data))
       .catch((error) => console.error("Error loading resume data:", error));
