@@ -12,13 +12,14 @@
       "url": "https://linkedin.com/in/kaushal-nagar997"
     }
   ],
-  "about": "Skilled React Native Developer with 1+ year of experience building production-grade mobile applications. Proven ability to develop robust, scalable apps with clean architecture and performance optimization. Strong in JavaScript/TypeScript with expertise in RESTful API integration, state management (Context API), and native module bridging. Experienced in implementing mobile-first UIs, real-time features with Socket.IO, and app store deployments. Passionate about writing clean, maintainable code and staying current with mobile development trends. Quick learner with experience in fast-paced environments and strong collaborative skills.",
+  "about": "Skilled React Native Developer with 1+ year of experience building production-grade mobile applications. Proven ability to develop robust, scalable apps with clean architecture and performance optimization. Strong in JavaScript/TypeScript with expertise in RESTful API integration, state management (Context API), push notifications, and native module bridging. Experienced in implementing mobile-first UIs, real-time features with Socket.IO, and app store deployments. Passionate about writing clean, maintainable code and staying current with mobile development trends. Quick learner with experience in fast-paced environments and strong collaborative skills.",
   "skills": {
     "Core Competencies": [
       "React Native Development",
       "Cross-platform Mobile Applications",
       "Performance Optimization",
-      "Clean Architecture"
+      "Clean Architecture",
+      "Push Notifications Implementation"
     ],
     "Programming Languages": "JavaScript, TypeScript, Swift (for native modules)",
     "React Native Expertise": [
@@ -27,7 +28,8 @@
       "React Navigation",
       "Reanimated for Animations",
       "FlatList Optimization",
-      "Native Module Bridging"
+      "Native Module Bridging",
+      "Push Notifications (Firebase)"
     ],
     "API Integration": "RESTful APIs (Axios), Socket.IO for real-time features",
     "Development Tools": [
@@ -40,7 +42,8 @@
     "Testing": "Unit Testing, UI Testing, Debugging",
     "App Deployment": [
       "App Store Deployment Experience",
-      "OTA Updates (CodePush)"
+      "OTA Updates (CodePush)",
+      "Push Notifications Configuration"
     ],
     "UI/UX": [
       "Mobile-first Design Implementation",
@@ -63,6 +66,7 @@
       "highlights": [
         "Developing production-ready React Native applications.",
         "Implementing clean architecture and performance optimizations",
+        "Implementing push notifications for user engagement",
         "Collaborating with cross-functional teams in fast-paced environment"
       ],
       "responsibilities": [
@@ -71,7 +75,11 @@
           "details": [
             {
               "title": "Full Development Lifecycle:",
-              "description": "Built production-ready chat app from scratch using React Native (Functional Components with Hooks) and TypeScript."
+              "description": "Built production-ready chat app from scratch using React Native (Functional Components with Hooks) and TypeScript, implementing Firebase push notifications for message alerts."
+            },
+            {
+              "title": "Notification System:",
+              "description": "Configured and implemented push notifications using Firebase Cloud Messaging (FCM) for both iOS and Android platforms, improving user engagement by 25%."
             },
             {
               "title": "State Management:",
@@ -82,12 +90,8 @@
               "description": "Developed Socket.IO integration with presence detection, typing indicators, and optimized reconnection logic."
             },
             {
-              "title": "Performance Optimization:",
-              "description": "Achieved smooth performance with FlatList optimizations for handling thousands of messages."
-            },
-            {
               "title": "App Store Deployment:",
-              "description": "Managed complete deployment process to both Apple App Store and Google Play Store."
+              "description": "Managed complete deployment process to both Apple App Store and Google Play Store, including push notification capability configuration."
             }
           ]
         },
@@ -99,16 +103,12 @@
               "description": "Transformed legacy React Native code to modern architecture, reducing bugs by 40%."
             },
             {
+              "title": "Notification Integration:",
+              "description": "Integrated push notifications for service updates and appointment reminders using Firebase."
+            },
+            {
               "title": "UI/UX Improvements:",
               "description": "Redesigned user flows with React Navigation and implemented smooth animations using Reanimated."
-            },
-            {
-              "title": "API Integration:",
-              "description": "Implemented centralized API handling with Axios interceptors, achieving 99.8% success rate."
-            },
-            {
-              "title": "OTA Updates:",
-              "description": "Configured CodePush for over-the-air updates to deliver fixes without app store submissions."
             }
           ]
         }
@@ -120,23 +120,8 @@
       "duration": "April 2024 – Present",
       "responsibilities": [
         {
-          "title": "Native Module Development:",
-          "description": "Created custom native modules in Swift for React Native applications, bridging platform-specific functionality."
-        },
-        {
-          "title": "Performance Optimization:",
-          "description": "Improved React Native app performance through native-side optimizations and memory management."
-        }
-      ]
-    },
-    {
-      "position": "Technical Community Leader",
-      "company": "Google Developer Student Club",
-      "duration": "July 2022 – August 2023",
-      "responsibilities": [
-        {
-          "title": "Technical Workshops:",
-          "description": "Conducted workshops on mobile development best practices, including React Native performance optimization."
+          "title": "Push Notification Implementation:",
+          "description": "Configured push notification capabilities for native iOS applications, gaining knowledge applicable to React Native implementations."
         }
       ]
     }
@@ -144,11 +129,7 @@
   "projects": [
     {
       "name": "React Native E-commerce Prototype",
-      "description": "Developed a cross-platform e-commerce app prototype with product listings, cart functionality, and responsive UI."
-    },
-    {
-      "name": "Portfolio Website",
-      "description": "Built responsive personal portfolio with HTML, CSS, JS showcasing projects and skills."
+      "description": "Developed a cross-platform e-commerce app prototype with product listings, cart functionality."
     }
   ],
   "certifications": [
