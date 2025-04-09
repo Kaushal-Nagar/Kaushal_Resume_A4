@@ -1,0 +1,188 @@
+{
+  "name": "Kaushal H. Nagar",
+  "Job Role": "Senior React Native Developer",
+  "contactInfo": [
+    "📞 6352599059",
+    {
+      "email": "kaushalnagar997@gmail.com",
+      "url": "mailto:kaushalnagar997@gmail.com"
+    },
+    {
+      "linkedin": "linkedin.com/in/kaushal-nagar997",
+      "url": "https://linkedin.com/in/kaushal-nagar997"
+    }
+  ],
+  "about": "Senior React Native Developer with 3+ years of experience building production-ready mobile applications. Proven expertise in developing robust, scalable, and high-performance cross-platform solutions. Skilled in JavaScript, TypeScript, and mobile design patterns with strong knowledge of state management (Context API, Redux). Experienced in RESTful API integration, native module bridging, and performance optimization. Adept at implementing mobile-first UI designs and collaborating with cross-functional teams. Passionate about clean architecture, CI/CD pipelines, and staying current with emerging mobile technologies.",
+  "skills": {
+    "Programming Languages": "JavaScript, TypeScript, Swift, Python, HTML5, CSS3",
+    "React Native Expertise": [
+      "React Native (Functional Components with Hooks)",
+      "State Management (Context API, Redux)",
+      "Navigation (React Navigation)",
+      "Animation (Reanimated)",
+      "Performance Optimization",
+      "Native Module Bridging"
+    ],
+    "Mobile Development": [
+      "RESTful API Integration (Axios)",
+      "Socket.IO for real-time features",
+      "FlatList optimization",
+      "Modular Component Design",
+      "Unit & UI Testing",
+      "Debugging & Performance Tuning"
+    ],
+    "iOS Frameworks": "UIKit, Core Location, MapKit (complementary to React Native)",
+    "Databases": "SQL, SQLite, Core Data",
+    "Developer Tools": [
+      "Git, GitHub, GitLab",
+      "VS Code, Xcode",
+      "Postman",
+      "Fastlane",
+      "Expo",
+      "Detox"
+    ],
+    "Testing": "Unit Testing, UI Testing, Integration Testing",
+    "CI/CD": "Experience with deployment pipelines",
+    "App Store": "Familiar with deployment processes",
+    "Designing Tools": "Figma, Adobe XD, Auto Layout",
+    "Agile Methodologies": "Kanban, JIRA, Active Collab",
+    "Soft Skills": [
+      "Team Leadership",
+      "Cross-functional Collaboration",
+      "Problem Solving",
+      "Technical Documentation"
+    ]
+  },
+  "experience": [
+    {
+      "position": "React Native Developer",
+      "company": "Webcodegenie Pvt Ltd",
+      "duration": "April 2024 – Present",
+      "responsibilities": [
+        {
+          "project": "WCG Chat (React Native Chat App)",
+          "details": [
+            {
+              "title": "Full-stack React Native Development:",
+              "description": "Led development of production-ready chat application using React Native with TypeScript, implementing clean architecture and separation of concerns."
+            },
+            {
+              "title": "Advanced State Management:",
+              "description": "Implemented complex state management using Context API with performance optimizations for handling real-time chat data."
+            },
+            {
+              "title": "Real-time Communication:",
+              "description": "Engineered Socket.IO integration with presence detection, typing indicators, and optimized reconnection strategies."
+            },
+            {
+              "title": "Performance Optimization:",
+              "description": "Achieved smooth scrolling through thousands of messages via FlatList optimization and memoization techniques."
+            },
+            {
+              "title": "CI/CD Implementation:",
+              "description": "Set up automated testing and deployment pipelines for consistent delivery."
+            }
+          ]
+        },
+        {
+          "project": "GoMow Customer (React Native App)",
+          "details": [
+            {
+              "title": "Legacy System Modernization:",
+              "description": "Transformed outdated React Native codebase to modern architecture, reducing bug reports by 40%."
+            },
+            {
+              "title": "Navigation & Animation:",
+              "description": "Implemented complex navigation flows with React Navigation and smooth animations using Reanimated."
+            },
+            {
+              "title": "API Layer Refactor:",
+              "description": "Centralized API handling with Axios interceptors, achieving 99.8% success rate."
+            },
+            {
+              "title": "App Store Deployment:",
+              "description": "Managed end-to-end deployment process to both Apple App Store and Google Play Store."
+            }
+          ]
+        },
+        {
+          "project": "React Native Component Library",
+          "details": [
+            {
+              "title": "Design System Implementation:",
+              "description": "Created reusable component library following Atomic Design principles with PropTypes validation."
+            },
+            {
+              "title": "Documentation:",
+              "description": "Developed comprehensive documentation for component usage and theming system."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": "iOS Developer (Complementary Experience)",
+      "company": "Webcodegenie Pvt Ltd",
+      "duration": "April 2024 – Present",
+      "responsibilities": [
+        {
+          "title": "Native Module Development:",
+          "description": "Created custom native modules for React Native applications, bridging iOS functionality."
+        },
+        {
+          "title": "Performance Optimization:",
+          "description": "Improved React Native app performance through native optimizations and memory management."
+        }
+      ]
+    },
+    {
+      "position": "Technical Community Leader",
+      "company": "Google Developer Student Club",
+      "duration": "July 2022 – August 2023",
+      "responsibilities": [
+        {
+          "title": "Technical Workshops:",
+          "description": "Conducted workshops on modern mobile development practices, including React Native best practices."
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "React Native Starter Kit",
+      "description": "Open-source starter template with pre-configured Redux, Navigation, and API layer for rapid app development."
+    },
+    {
+      "name": "E-commerce App (React Native)",
+      "description": "Cross-platform e-commerce application with product listings, cart functionality, and payment integration."
+    },
+    {
+      "name": "Smart IoT Dashboard (React Native)",
+      "description": "Mobile dashboard for IoT devices with real-time data visualization and push notifications."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Advanced React Native",
+      "issuer": "Udemy",
+      "year": "2023"
+    },
+    {
+      "name": "Google Developer Student Club Lead",
+      "issuer": "Google",
+      "year": "2023"
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.E. Computer Science",
+      "institution": "Government Engineering College, Patan (GTU)",
+      "year": "2020 - 2024",
+      "grade": "CGPA: 7.52"
+    }
+  ],
+  "additionalDetails": {
+    "availability": "Immediate Joiner",
+    "contractPreference": "Open to 6-month contract (extendable)"
+  }
+}

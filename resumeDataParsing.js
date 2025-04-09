@@ -4,12 +4,12 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: "Common",
       name: "Common Resume",
-      file: "/resumeVersions/Common.json",
+      file: "Common.json",
     },
     {
-      id: "react-native",
-      name: "React Native Resume",
-      file: "/resumeVersions/ReactNative.json",
+      id: "Alpha and Omega",
+      name: "Alpha and Omega Specific Resume",
+      file: "Alpha_and_Omega.json",
     },
   ];
 
