@@ -17,6 +17,7 @@
     "Programming Languages": "C, Python, Swift, React Native, SwiftUI basics, HTML5, CSS3, JavaScript, TypeScript",
     "iOS Frameworks": "UIKit, Core Animation, Core Location, AVFoundation, MapKit, CocoaPods",
     "Databases": "SQL, SQLite, Core Data",
+    "Software Architecture": "OOP, MVC, MVVM",
     "Developer Tools": "Git, GitHub, GitLab, VS Code, Xcode, Pycharm, IntelliJ IDEA, Android Studio, Postman",
     "Testing": "XCTest, Unit Testing, UI Testing, Debugging",
     "Operating Systems": "Windows, MacOs, Linux",
@@ -113,63 +114,32 @@
       ]
     },
     {
-      "position": "Founder & Lead",
-      "company": "Google Developer Student Club",
-      "duration": "July 2022 – July 2023",
+      "position": "Technical Community Leader",
+      "company": "Google Developer Student Club & Ed-Tech Platforms",
+      "duration": "July 2022 – August 2023",
       "responsibilities": [
         {
-          "description": "Established and led developer community, Organizing 25+ technical workshops on Google Cloud Platform, Kotlin, Flutter, and resume building etc."
+          "title": "Google Developer Student Club Lead:",
+          "description": "Founded and led Google developer community, organizing 25+ technical workshops on GCP, Kotlin, Flutter, and resume building. Organized GDSC WOW Gujarat 2023 (700+ attendees)."
         },
         {
-          "description": "Organized large-scale tech event GDSC WOW Gujarat 2023, attracting 700+ participants and fostering a collaborative community."
+          "title": "Technical Community Head:",
+          "description": "Led and Managed developer communities for Algozenith, Coding Blocks, Coding Ninja, Skill-Lync, and TechLearn, fostering technical growth among members."
         }
       ]
     },
     {
-      "position": "Technical Community Head",
-      "company": "Algozenith, Coding Blocks, Coding Ninja, Skill-Lync, TechLearn",
-      "duration": "August 2022 - August 2023",
-      "responsibilities": [
-        {
-          "description": "Led technical communities for 5+ ed-tech platforms."
-        }
-      ]
-    },
-    {
-      "position": "Content Writer, SME & Data Entry Operator",
-      "company": "FreeCo",
+      "position": "Content & Operations Specialist",
+      "company": "FreeCo & Epitome Webcasting",
       "duration": "Feb 2021 – Nov 2021",
       "responsibilities": [
         {
-          "title": "Content Writing:",
-          "description": "Wrote SEO-friendly articles."
+          "title": "Content Development:",
+          "description": "Authored SEO-friendly articles and served as SME for mathematics, physics, and chemistry content."
         },
         {
-          "title": "SME:",
-          "description": "Provided expert knowledge on academic subjects: mathematics, physics, and chemistry."
-        },
-        {
-          "title": "Data Entry:",
-          "description": "Entered and verified data into databases."
-        }
-      ]
-    },
-    {
-      "position": "Webcasting Assistant",
-      "company": "Epitome Webcasting",
-      "duration": "Sept 2021 – Oct 2021",
-      "responsibilities": [
-        {
-          "title": "Webcasting Operations:",
-          "description": "Assisted in setting up and operating webcasting equipment and software."
-        },
-        {
-          "title": "Live Event Monitoring:",
-          "description": "Monitored and troubleshooted webcasting issues during live events."
-        },
-        {
-          "title": "Video Editing & Uploading:",
-          "description": "Edited and uploaded recorded videos to online platforms such as YouTube and Vimeo."
+          "title": "Technical Operations:",
+          "description": "Performed data entry/verification and assisted webcasting operations (equipment setup, live monitoring, video editing/uploading)."
         }
       ]
     }
@@ -207,19 +177,19 @@
     {
       "degree": "B.E. Computer Science",
       "institution": "Government Engineering College, Patan (GTU)",
-      "year": "2024",
+      "year": "2020 - 2024",
       "grade": "CGPA: 7.52"
     },
     {
       "degree": "HSC",
       "institution": "Nilkanth Vidhyalay, Limbdi (GSEB, Gandhinagar)",
-      "year": "2020",
+      "year": "2018 - 2020",
       "grade": "Percentage: 57%"
     },
     {
       "degree": "SSC",
       "institution": "S.T. Thomash School, Limbdi (GSEB, Gandhinagar)",
-      "year": "2018",
+      "year": "2017 -  2018",
       "grade": "Percentage: 73.33%"
     }
   ]
