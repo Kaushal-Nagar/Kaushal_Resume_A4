@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
       file: "Common.json",
     },
     {
-      id: "Alpha and Omega",
-      name: "Alpha and Omega Specific Resume",
-      file: "Alpha_and_Omega.json",
+      id: "IOS",
+      name: "IOS Specific Resume",
+      file: "IOSSpecific.json",
     },
   ];
 
@@ -54,8 +54,9 @@ document.addEventListener("DOMContentLoaded", function () {
     versionSelector.appendChild(card);
   });
 
-  // Load the first resume by default
-  loadResumeData(resumeVersions[0].file);
+  // // Load the first resume by default
+  // loadResumeData(resumeVersions[1].file);
+  switchResumeVersion(resumeVersions[1].id);
 
   // Modified switch function with optional print parameter
   function switchResumeVersion(versionId, shouldPrint = false) {
@@ -119,6 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Populate about section
     const aboutList = document.getElementById("about");
+    aboutList.innerHTML = "";
     if (Array.isArray(data.about)) {
       // If about is an array, create list items
       data.about.forEach((point) => {

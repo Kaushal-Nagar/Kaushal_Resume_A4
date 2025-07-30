@@ -1,0 +1,145 @@
+{
+  "name": "Kaushal H. Nagar",
+  "Job Role": "iOS Software Engineer (Swift/SwiftUI)",
+  "contactInfo": [
+    "📞 6352599059",
+    {
+      "email": "kaushalnagar997@gmail.com",
+      "url": "mailto:kaushalnagar997@gmail.com"
+    },
+    {
+      "linkedin": "linkedin.com/in/kaushal-nagar997",
+      "url": "https://linkedin.com/in/kaushal-nagar997"
+    }
+  ],
+  "about": [
+    "iOS Software Engineer with 1.5+ years of experience in Swift, SwiftUI, specializing in building high-performance applications with modern iOS architectures. Proven expertise in the full software development lifecycle for iOS applications with a focus on delivering impactful user experiences.",
+    "Proven track record in leading complete mobile app lifecycles - from concept to deployment - for diverse projects including CRM, e-commerce, logistics, and healthcare applications and Passionate about clean architecture, efficient coding practices, and emerging technologies.",
+    "Skilled in native iOS development with deep knowledge of frameworks like SwiftUI, UIKit, Core Location, and MapKit. Experience in optimizing app performance and implementing real-time features.",
+    "Passionate about clean architecture and efficient coding practices, with experience in implementing XCTest for thorough testing and maintaining high code quality standards.",
+    "Technical leader with experience in product-led growth approaches, having delivered 7+ mobile applications across various domains with measurable impact on user engagement."
+  ],
+  "skills": {
+    "Programming Languages": "C, Python, Swift, React Native, SwiftUI, HTML5, CSS3, JavaScript, TypeScript",
+    "iOS Frameworks": "UIKit, Core Animation, Core Location, AVFoundation, MapKit, CocoaPods",
+    "Software Development Lifecycle": "Requirements analysis, Design, Implementation, Testing, Deployment, Maintenance",
+    "Databases": "SQL, SQLite, Core Data, Realm DB ( By MongoDB )",
+    "Software Architecture": "MVVM, MVC, OOP",
+    "Developer Tools": "Git, GitHub, GitLab, VS Code, Xcode, Pycharm, IntelliJ IDEA, Android Studio, Postman, GitHub Copilot",
+    "Testing": "XCTest, Unit Testing, UI Testing, Debugging",
+    "Performance Optimization": "Memory management, Efficient data handling",
+    "Operating Systems": "Windows, MacOs, Linux",
+    "Designing Tools": "Figma, Adobe XD, Storyboards, Auto Layout, Photoshop, Lightroom, After Effects, Premiere Pro",
+    "Agile Methodologies": "Kanban, JIRA, Active Collab",
+    "Other Software": "OBS Studio",
+    "Soft Skills": "Team Leadership, Communication, Problem Solving, Analytical Skills, Time Management",
+    "Other Skills": "Ethical Hacking, Rubik's Cube Solver (2 Min)"
+  },
+  "experience": [
+    {
+      "position": "iOS Developer (Swift/SwiftUI)",
+      "company": "Webcodegenie Pvt Ltd",
+      "duration": "April 2024 – Present",
+      "responsibilities": [
+        {
+          "project": "Mario Customer & Mario Driver Apps",
+          "details": [
+            {
+              "title": "Native iOS Development:",
+              "description": "Developed production-grade iOS applications using Swift and UIKit, following modern iOS architecture patterns."
+            },
+            {
+              "title": "Real-Time Location Services:",
+              "description": "Implemented Core Location and MapKit for real-time tracking with 95% accuracy, optimizing battery usage while maintaining precise location updates."
+            },
+            {
+              "title": "Performance Optimization:",
+              "description": "Developed features handling 6GB+ data with <50MB memory usage through efficient memory management and optimized data handling techniques."
+            },
+            {
+              "title": "Quality Assurance:",
+              "description": "Implemented comprehensive Unit Testing using XCTest, achieving major code coverage and ensuring reliable, bug-free releases."
+            }
+          ]
+        },
+        {
+          "project": "GoMow Crew (iOS App)",
+          "details": [
+            {
+              "title": "Offline-First Architecture:",
+              "description": "Designed and implemented robust offline capabilities using SQLite and Core Data, with automatic synchronization when connectivity is restored."
+            },
+            {
+              "title": "Data Synchronization:",
+              "description": "Developed conflict resolution strategies for bi-directional sync between local storage and cloud services, ensuring data consistency."
+            }
+          ]
+        },
+        {
+          "project": "Yallah Chiaka (iOS E-commerce App)",
+          "details": [
+            {
+              "description": "Led end-to-end development of iOS e-commerce application, delivering 30+ dynamic screens within tight deadlines while maintaining code quality."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": "Technical Community Leader",
+      "company": "Google Developer Student Club & Ed-Tech Platforms",
+      "duration": "July 2022 – August 2023",
+      "responsibilities": [
+        {
+          "title": "Google Developer Student Club Lead:",
+          "description": "Founded and led Google developer community, organizing 25+ technical workshops on GCP, Kotlin, Flutter, and resume building. Organized GDSC WOW Gujarat 2023 (700+ attendees)."
+        },
+        {
+          "title": "Technical Community Head:",
+          "description": "Led and Managed developer communities for Algozenith, Coding Blocks, Coding Ninja, Skill-Lync, and TechLearn, fostering technical growth among members."
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Music Player (iOS Swift App)",
+      "description": "Built a fully functional music player with audio playback and media controls using AVFoundation and AVPlayer."
+    },
+    {
+      "name": "Tic-Tac-Toe Game (iOS Swift App)",
+      "description": "Developed game logic and dynamic UI updates using Swift, demonstrating understanding of iOS app architecture."
+    },
+    {
+      "name": "E-commerce App (iOS Swift App)",
+      "description": "Designed and developed a full-fledged e-commerce platform with product listings."
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.E. Computer Science",
+      "institution": "Government Engineering College, Patan (GTU)",
+      "year": "2020 - 2024",
+      "grade": "CGPA: 7.52"
+    },
+    {
+      "degree": "HSC",
+      "institution": "Nilkanth Vidhyalay, Limbdi (GSEB, Gandhinagar)",
+      "year": "2019 - 2020",
+      "grade": "Percentage: 57%"
+    },
+    {
+      "degree": "SSC",
+      "institution": "S.T. Thomash School, Limbdi (GSEB, Gandhinagar)",
+      "year": "2017 -  2018",
+      "grade": "Percentage: 73.33%"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Google Developer Student Club Lead",
+      "issuer": "Google",
+      "year": "2023"
+    }
+  ]
+}
