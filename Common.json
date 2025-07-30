@@ -12,11 +12,20 @@
       "url": "https://linkedin.com/in/kaushal-nagar997"
     }
   ],
-  "about": "Results-driven iOS Developer with hands-on experience in building robust, scalable, and high-performance applications. Proficient in Swift, UIKit, and MapKit, with expertise in real-time communication using Core Location. Skilled in optimizing memory management and enhancing app performance through efficient coding practices. Experienced in implementing XCTest for thorough testing and maintaining code quality. Developed cross-platform solutions with React Native (Axios, Context API, Functional Components). Led technical initiatives as Google Developer Student Club Lead, organizing events for 700+ attendees. Passionate about clean architecture, efficient coding practices, and emerging technologies.",
+  "about": [
+    "Results-driven iOS and React Native (cross-platform) Developer with hands-on experience in building robust, scalable, and high-performance applications. Proficient in Swift, UIKit, and MapKit, with expertise in real-time communication using Core Location. Skilled in optimizing memory management and enhancing app performance through efficient coding practices. Experienced in implementing XCTest for thorough testing and maintaining code quality.",
+    "Proven track record in leading complete mobile app lifecycles - from concept to deployment - for diverse projects including CRM, e-commerce, logistics, and healthcare applications and Passionate about clean architecture, efficient coding practices, and emerging technologies.",
+    "Specialized in offline-first architectures with implementations in both SQLite (iOS) and Realm (React Native), ensuring seamless functionality in low-connectivity scenarios.",
+    "Expert in real-time features implementation including Socket.IO for messaging, Core Location for live tracking, and VoIP/SIP for calling functionality in mobile apps.",
+    "Passionate about performance optimization with achievements like handling 6GB image uploads with <50MB memory usage and smooth scrolling through thousands of chat messages.",
+    "Skilled in UI/UX design principles with experience creating child-friendly interfaces for special needs users and optimizing user flows for better engagement metrics.",
+    "Technical leader with experience managing developer communities (Google DSC) and mentoring 700+ members through workshops on mobile development best practices.",
+    "Strong background in both technical implementation and project leadership, having successfully delivered 7+ mobile applications across various domains."
+  ],
   "skills": {
-    "Programming Languages": "C, Python, Swift, React Native, SwiftUI basics, HTML5, CSS3, JavaScript, TypeScript",
+    "Programming Languages": "C, Python, Swift, React Native, SwiftUI, HTML5, CSS3, JavaScript, TypeScript",
     "iOS Frameworks": "UIKit, Core Animation, Core Location, AVFoundation, MapKit, CocoaPods",
-    "Databases": "SQL, SQLite, Core Data",
+    "Databases": "SQL, SQLite, Core Data, Realm DB ( By MongoDB )",
     "Software Architecture": "OOP, MVC, MVVM",
     "Developer Tools": "Git, GitHub, GitLab, VS Code, Xcode, Pycharm, IntelliJ IDEA, Android Studio, Postman",
     "Testing": "XCTest, Unit Testing, UI Testing, Debugging",
@@ -25,11 +34,11 @@
     "Agile Methodologies": "Kanban, JIRA, Active Collab",
     "Other Software": "OBS Studio",
     "Soft Skills": "Team Leadership, Communication, Problem Solving, Analytical Skills, Time Management",
-    "Other Interests": "Ethical Hacking, Rubik's Cube Solver (2 Min)"
+    "Other Skills": "Ethical Hacking, Rubik's Cube Solver (2 Min)"
   },
   "experience": [
     {
-      "position": "iOS ( Swift ) and React Native Developer",
+      "position": "iOS ( Swift/SwiftUI ) and React Native Developer",
       "company": "Webcodegenie Pvt Ltd",
       "duration": "April 2024 – Present",
       "responsibilities": [
@@ -59,6 +68,19 @@
           ]
         },
         {
+          "project": "GoMow Crew (iOS App with Offline Capabilities)",
+          "details": [
+            {
+              "title": "Offline-First Architecture:",
+              "description": "Implemented SQLite for robust offline data management, enabling full functionality without internet connectivity with automatic sync when online."
+            },
+            {
+              "title": "Data Synchronization:",
+              "description": "Developed conflict resolution strategies for bi-directional sync between local SQLite and cloud database, ensuring data consistency."
+            }
+          ]
+        },
+        {
           "project": "Yallah Chiaka ( iOS Swift )",
           "details": [
             {
@@ -70,27 +92,60 @@
           ]
         },
         {
-          "project": "WCG Chat (React Native Chat App)",
+          "project": "Pictogram (React Native App for Autism Support)",
           "details": [
             {
-              "title": "Built from Scratch with Modern Architecture:",
-              "description": "Developed a production-ready chat application using React Native (Functional Components with Hooks), implementing clean architecture with separation of concerns."
+              "title": "Local Notification System:",
+              "description": "Implemented a comprehensive local notification scheduling system eliminating backend dependency, ensuring reliable reminders for daily tasks and activities."
+            },
+            {
+              "title": "Offline-First Architecture:",
+              "description": "Integrated Realm by MongoDB as local database solution, enabling full offline functionality for users with intermittent internet access."
+            },
+            {
+              "title": "Child-Centric UI/UX:",
+              "description": "Designed intuitive, visually clear interfaces specifically tailored for children with autism, using color psychology and simplified navigation patterns."
+            },
+            {
+              "title": "Progress Tracking:",
+              "description": "Developed mood and task completion tracking system with visual analytics to help caregivers monitor progress over time."
+            },
+            {
+              "title": "Performance Optimization:",
+              "description": "Achieved smooth performance on low-end devices through efficient memory management and optimized database queries."
+            }
+          ]
+        },
+        {
+          "project": "Sales CRM (React Native Mobile App)",
+          "details": [
+            {
+              "title": "End-to-End Project Leadership:",
+              "description": "Led the complete development lifecycle of the Sales CRM mobile application from concept to deployment, coordinating between cross-functional teams."
             },
             {
               "title": "Advanced Socket Implementation:",
               "description": "Engineered real-time messaging system using Socket.IO, implementing presence detection, typing indicators, and message delivery status with optimized reconnection strategies."
             },
             {
-              "title": "API Integration & State Management:",
-              "description": "Implemented RESTful API calls using Axios, coupled with Context API for efficient global state management across chat screens."
+              "title": "Communication Suite Implementation:",
+              "description": "Integrated comprehensive communication features including SIP calling (VoIP), WhatsApp messaging, and SMS chat functionality within the app."
             },
             {
-              "title": "Performance Optimization:",
-              "description": "Achieving smooth scrolling through thousands of messages with FlatList optimization."
+              "title": "Contact Management System:",
+              "description": "Developed a robust contact management system with synchronization capabilities to device contacts."
             },
             {
-              "title": "Modular Component Design:",
-              "description": "Created reusable UI components (MessageBubble, TypingIndicator, ChatHeader) with PropTypes validation, following Atomic Design principles for scalability."
+              "title": "Call History & Analytics:",
+              "description": "Implemented detailed call history tracking with duration, timestamps, and call outcome categorization, plus visual analytics dashboard."
+            },
+            {
+              "title": "Real-Time Messaging:",
+              "description": "Engineered real-time chat functionality with Socket.IO, implementing presence detection, typing indicators, and message status tracking."
+            },
+            {
+              "title": "Cross-Platform Compatibility:",
+              "description": "Ensured seamless functionality across both iOS and Android platforms with platform-specific optimizations for calling features following with Atomic Design principles for scalability."
             }
           ]
         },
@@ -146,15 +201,15 @@
   ],
   "projects": [
     {
-      "name": "Music Player (iOS App)",
+      "name": "Music Player (iOS Swift App)",
       "description": "Built a fully functional music player with audio playback and media controls using AVFoundation and AVPlayer."
     },
     {
-      "name": "Tic-Tac-Toe Game (iOS App)",
+      "name": "Tic-Tac-Toe Game (iOS Swift App)",
       "description": "Developed a game with dynamic UI updates and game logic using Swift."
     },
     {
-      "name": "E-commerce App (iOS App)",
+      "name": "E-commerce App (iOS Swift App)",
       "description": "Designed and developed a full-fledged e-commerce platform with product listings."
     },
     {

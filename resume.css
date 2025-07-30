@@ -140,10 +140,16 @@ h2 {
 }
 
 /* About Section */
-.about-section p {
-  font-size: var(--base-font-size);
+.about-section ul {
   margin: var(--spacing-small) 0;
-  text-align: justify;
+  padding-left: 30px;
+}
+
+.about-section li {
+  margin-bottom: var(--spacing-small);
+  font-size: var(--base-font-size);
+  text-align: left;
+  list-style-type: disc;
 }
 
 /* List Styles - Global Bullet Point Indentation */

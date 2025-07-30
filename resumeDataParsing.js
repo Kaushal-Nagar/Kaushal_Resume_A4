@@ -118,7 +118,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Populate about section
-    document.getElementById("about").textContent = data.about;
+    const aboutList = document.getElementById("about");
+    if (Array.isArray(data.about)) {
+      // If about is an array, create list items
+      data.about.forEach((point) => {
+        const li = document.createElement("li");
+        li.textContent = point;
+        aboutList.appendChild(li);
+      });
+    } else {
+      // Fallback for old string format (backward compatibility)
+      const li = document.createElement("li");
+      li.textContent = data.about;
+      aboutList.appendChild(li);
+    }
 
     // Populate skills
     const skillsList = document.getElementById("skills");
